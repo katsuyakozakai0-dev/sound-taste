@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Sound × Taste Spoon | 苦手な野菜が“チャレンジ”に変わるスマート食器</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <style>
+    /* ベース */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.8;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    header, section { padding: 4rem 1.5rem; }
+    .container { max-width: 1040px; margin: 0 auto; }
+    .narrow    { max-width: 760px;  margin: 0 auto; }
+
+    /* ヒーロー */
+    .hero {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      background: radial-gradient(circle at top left,#eff6ff 0,#ffffff 50%);
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; }
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero-title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .btn-main {
+      background: #2563eb;
+      color: #ffffff;
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .btn-ghost {
+      border: 1px solid #2563eb;
+      color: #2563eb;
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      background: #ffffff;
+    }
+    .hero-image-wrap { text-align: center; }
+    .hero-image {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      border-radius: 1.25rem;
+      box-shadow: 0 18px 45px rgba(15,23,42,0.15);
+    }
+
+    /* 見出し・カード */
+    .section-sub {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #0f172a;
+    }
+    .card {
+      background: #f9fafb;
+      border-radius: 1rem;
+      padding: 1.7rem 1.6rem;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 1.7rem;
+    }
+    .label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.08em;
+    }
+
+    .full-width-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 12px 30px rgba(15,23,42,0.12);
+      margin: 1rem 0;
+    }
+
+    /* 2カラム */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0,1.1fr) minmax(0,0.9fr);
+      gap: 2rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .quote     { font-size: 0.95rem; color: #111827; margin-bottom: 0.75rem; }
+    .quote-role{ font-size: 0.8rem;  color: #6b7280; }
+
+    ul  { padding-left: 1.2rem; }
+    li  { margin-bottom: 0.3rem; }
+
+    footer {
+      padding: 2rem 1.5rem 3rem;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 0.8rem;
+      background: #f9fafb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-badge">ゲームみたいに「一口チャレンジ」を応援するスマート食器</div>
+        <h1 class="hero-title">苦手な野菜が、<br>「成功サウンド」に変わる。</h1>
+        <p class="hero-sub">
+          スプーンと食器の距離にあわせて音が変わり、<br>
+          口に運ぶ瞬間に“ごほうびサウンド”が鳴るスマート食器。<br>
+          ソニックシーズニングの研究をヒントに、子どもの「ちょっと食べてみようかな」を支えます。
+        </p>
+        <div class="hero-buttons">
+          <a href="#how" class="btn-main">仕組みを見る</a>
+          <a href="#schools" class="btn-ghost">学校・保育園での活用イメージ</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="smart_tableware.png" alt="音が出るスマート子ども用食器とスプーン" class="hero-image">
+      </div>
+    </div>
+  </header>
+
+  <!-- How it works -->
+  <section id="how">
+    <div class="container narrow">
+      <div class="section-sub">How it works</div>
+      <h2 class="section-title">なにができる食器？― 3ステップでわかる体験</h2>
+
+      <!-- 3ステップ：図＋テキストの2カラム -->
+      <div class="card">
+        <div class="grid-2">
+          <div>
+            <div class="label">3つの状態で音が変わる</div>
+            <p>
+              スプーンと食器に内蔵されたセンサーが、口との距離や状態を検知します。  
+              行為そのものがゲームのクリア演出になり、「一口チャレンジ」を自然に引き出します。
+            </p>
+            <ul>
+              <li>何もすくっていない状態：静かな待機モード</li>
+              <li>食べ物を乗せた状態：ワクワクを高める明るい音</li>
+              <li>口に運んだ時：“ごほうびサウンド”</li>
+            </ul>
+          </div>
+          <div>
+            <img src="distance_sound_fix.png"
+                 alt="何もすくっていない・食べ物を乗せた・口に運ぶで音が変化する3コマ図"
+                 class="full-width-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- ソニックシーズニングの説明：1カラム -->
+      <div class="card">
+        <div class="label">音の調味料「ソニックシーズニング」</div>
+        <p>
+          ソニックシーズニングは、一言でいうと「音の調味料」です。  
+          レモンや砂糖の代わりに、“音”で味の感じ方を少し変えてしまおう、という考え方です。
+        </p>
+        <p>
+          高くて明るい音や楽しい音楽は、甘さや軽さを感じやすくし、  
+          低くて重い音や不協和音は、苦味や重さと結びつきやすいことがオックスフォード大学の研究などで報告されています。
+        </p>
+        <p>
+          この食器では、苦味のある野菜を口に運ぶタイミングで「明るいごほうびサウンド」を鳴らすことで、  
+          苦味のハードルをやわらげ、「食べてみようかな」という気持ちを応援します。
+        </p>
+        <p class="label">※効果は今後の共同研究で定量検証予定</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- For schools -->
+  <section id="schools">
+    <div class="container narrow">
+      <div class="section-sub">For schools & nurseries</div>
+      <h2 class="section-title">学校・保育園での活用イメージ</h2>
+
+      <div class="card">
+        <div class="grid-2">
+          <div>
+            <p class="label">いつ・どう使う？</p>
+            <ul>
+              <li>給食・おやつのうち「5分だけチャレンジタイム」を設定</li>
+              <li>苦手な野菜や新しいメニューに対して、スマート食器を使用</li>
+              <li>先生はタブレットでメニューを選び、あとは子どもの様子を見守るだけ</li>
+            </ul>
+          </div>
+          <div>
+            <img src="kids_enjoy.png"
+                 alt="スマート食器で給食を楽しむ子どもたち"
+                 class="full-width-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="label">子ども・先生の声（イメージ）</p>
+        <p class="quote">「ゲームみたいに音が鳴るから、ちょっと食べてみたくなる。」</p>
+        <p class="quote-role">6歳児</p>
+        <p class="quote">「スプーンとお皿が応援してくれるので、説得に使う言葉が減りました。」</p>
+        <p class="quote-role">小学校教員</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section id="product">
+    <div class="container narrow">
+      <div class="section-sub">Product concept</div>
+      <h2 class="section-title">スマート食器ラインナップ（構想）</h2>
+
+      <div class="card">
+        <p class="label">School Edition（学校・保育園向け）</p>
+        <p>
+          ・スマートプレート × スマートスプーン セット<br>
+          ・距離センサー＋Bluetooth＋内蔵スピーカー<br>
+          ・IP等級を満たす防水構造で、丸洗い・大量洗浄に対応<br>
+          ・専用タブレットアプリでメニューと音プロファイルを管理
+        </p>
+        <p>
+          既存のスマートプレートや栄養モニタリング食器と同様に、センサーと通信機能を備えつつ、  
+          「音」の出力と子どもの体験デザインに特化した設計を目指します。
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="label">Home Edition（家庭向け）</p>
+        <p>
+          ・家庭向けの少人数セット<br>
+          ・スマートフォンアプリと連携し、学校と同じ「成功サウンド」を再現<br>
+          ・子どもの「食べられた記録」をスタンプ形式で可視化
+        </p>
+        <p>
+          将来的には、子どもごとの好みや感覚特性に合わせて音のプロファイルをカスタマイズできることも視野に入れています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container narrow">
+      <div class="section-sub">Pilot & Collaboration</div>
+      <h2 class="section-title">共同研究・パイロット導入パートナー募集</h2>
+      <p>
+        このスマート食器コンセプトを実証するため、学校・保育園・研究機関との共同プロジェクトを企画しています。  
+        ソニックシーズニング研究の知見を活かしながら、偏食改善・食育・感覚特性支援に役立つ新しいインターフェースを一緒に形にしていきませんか。
+      </p>
+      <p style="margin-top: 1.5rem;">
+        お問い合わせ：<a href="mailto:info@example.com">info@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container narrow">
+      <div>© 2025 Sound × Taste Spoon Project</div>
+      <div style="margin-top: 0.5rem;">
+        このサイトで紹介している内容は、音と味のクロスモーダル研究およびソニックシーズニング研究を参考にした試作段階のアイデアです。
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
